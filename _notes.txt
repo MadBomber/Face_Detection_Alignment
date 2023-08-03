@@ -1,0 +1,21 @@
+# Face_Detection_alignment/_notes.txt
+
+
+--- 2022-12-08 12:49:44 -0600
+	trying to see if this is worth looking into more deeply
+
+	CUDA_VISIBLE_DEVICES=“1” python train.py –train_dir=ckpt/3D84 –batch_size=8 –initial_learning_rate=0.0001 –dataset_dir=3D84/300W.tfrecords,3D84/afw.tfrecords,3D84/helen_testset.tfrecords,3D84/helen_trainset.tfrecords,3D84/lfpw_testset.tfrecords,3D84/lfpw_trainset.tfrecords,3D84/ibug.tfrecords,3D84/menpo_trainset.tfrecords –n_landmarks=84
+	
+	
+	
+--- 2022-12-08 13:06:21 -0600
+	did a brew install of tensorflow but the python module install had problems ...
+
+	13:03:51 3.1.3p185 master Earth:Face_Detection_Alignment $ python3 -m pip install tensorflow
+	Defaulting to user installation because normal site-packages is not writeable
+	ERROR: Could not find a version that satisfies the requirement tensorflow (from versions: none)
+	ERROR: No matching distribution found for tensorflow
+	13:04:43 3.1.3p185 master Earth:Face_Detection_Alignment $
+	
+	
+	
